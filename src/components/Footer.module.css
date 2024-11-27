@@ -1,0 +1,145 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10em;
+    width: 100%;
+    padding: 2em 3em;
+}
+
+.footer strong,
+p,
+ul,
+li {
+    margin: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 0;
+
+}
+
+.logo p {
+    font-size: 20px !important;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    height: 60px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.contact {
+    margin:  0;
+}
+
+.contact p {
+    font-size: 12px;
+    width: 25em;
+    margin: 1.5em 0;
+}
+
+.social {
+    margin-top: 1em;
+    display: flex;
+    justify-content: start;
+
+
+}
+
+.social span {
+    padding: 10px 13px;
+    cursor: pointer;
+    margin:  0 20px;
+    font-size: 20px;
+    border-radius: 60px;
+    border: solid 1px #b1b0b0;
+    color: #3d3d3d;
+    text-align: center;
+}
+
+.social span:hover {
+    background-color: #e05504;
+    border: #ffffff solid 1px;
+    color: #ffffff;
+}
+
+.links {
+    margin: 0;
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+}
+
+.links ul {
+    list-style: none;
+    margin-top: .5em;
+}
+
+.links li {
+    font-weight: 500;
+    margin: 1em 0;
+    align-self: flex-start;
+    cursor: pointer;
+    font-size: 11px;
+}
+
+.links li:hover {
+    color: #e05504;
+
+}
+.footer strong {
+    font-size: 13px;
+}
+@media (max-width: 890px) {
+    .footer {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 10em;
+        width: 100%;
+        padding: 2em 1.5em;
+    }
+
+    .contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0;
+        margin-top: 5em;
+    }
+    .logo p {
+        font-size: 20px !important;
+        width: 300px;
+        
+        font-weight: 600;
+        margin: 0;
+        padding: 0;
+    }
+
+    .links {
+        margin: 0;
+        display: flex;
+        text-align: start;
+        flex-direction: column;
+        align-self: flex-start;
+        margin-top: 2em;
+    }
+    .logoText{
+        text-align: center;
+    }
+    .links ul {
+        list-style: none;
+        margin-top: 1em;
+    }
+    
+
+}

@@ -1,0 +1,360 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texts {
+    padding: 1em;
+    text-align: center;
+}
+
+.texts h1 {
+    font-size: 2em;
+    font-weight: 800;
+
+}
+
+.texts p {
+    margin: 1em 0;
+}
+
+.searchField {
+    display: flex;
+    align-items: center;
+    width: 30em;
+    height: 2.5em;
+    border: solid 1px #dddddd;
+    border-radius: 20px;
+}
+
+.searchField input {
+    height: 2em;
+    width: 25em;
+    border: none;
+    outline: none;
+    margin-right: 1em;
+}
+
+.searchField button {
+    width: 30px;
+    height: 30px;
+    padding-right: .1em;
+    border-radius: 90px;
+    border: none;
+    color: #ffffff;
+    font-size: 15px;
+    background-color: #e05504;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cardContainer {
+    margin: 3em 0;
+    display: flex;
+    width: 60%;
+    height: 20em;
+    gap: 30px;
+    overflow-x: auto;
+}
+
+.pros {
+    display: flex;
+    width: 60%;
+    padding: 30px;
+
+}
+
+.prosDetail {
+    display: flex;
+    align-items: center;
+}
+
+.prosDetail span {
+    font-size: 30px;
+    padding: 0.5em;
+}
+
+.divide {
+    background-color: #dad9d9;
+    width: 0.1px;
+}
+
+.explore {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 67%;
+    gap: 34em;
+
+}
+
+.explore h2 {
+    margin-top: 1em;
+    font-size: 1.7em;
+
+    width: 300px;
+}
+
+.explore button {
+    background-color: #1e1e1f;
+    color: #dddde0;
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.explore button:hover {
+    background-color: inherit;
+    color: #1e1e1f;
+    border: solid #1e1e1f 1px;
+}
+
+.categories {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.categoriesDetails {
+    border: solid #d7d7d8 1px;
+    padding: 35px 30px;
+    border-radius: 15px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    cursor: pointer;
+    justify-content: center;
+    margin-top: 2em;
+    transition: .5s ease;
+}
+
+.categoriesDetails:hover {
+    border: solid #e05504 1px;
+    color: #e05504;
+}
+
+.categoriesDetails span {
+    font-size: 25px;
+}
+
+.categoriesDetails strong {
+    font-size: 10px;
+    color: #1e1e1f;
+}
+
+.categoriesDetails p {
+    font-size: 8px;
+    color: #1e1e1f;
+}
+
+.productsContainer {
+    margin-top: 5em;
+    width: 64%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.aga2 {
+    margin-top: 2em;
+}
+
+.newProd {
+    width: 12rem;
+    height: 17rem;
+    border: solid 1px #c7c6c6;
+    background-color: #dfdddd;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s ease;
+    color: #333333;
+}
+
+.newProd:hover {
+    background-color: #ffffff;
+    border: solid 1px #c0c0c0;
+}
+
+.loadingAnimation {
+    margin: 0;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:1400px) {
+    .pros {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 5em 0;
+        align-items: flex-end;
+        justify-content: flex-start;
+        margin: 0;
+
+    }
+
+
+    .divide {
+
+        display: none;
+    }
+
+    .prosDetail {
+        display: flex;
+        align-items: flex-start;
+        margin: 0 4em;
+        padding: 0;
+        align-self: flex-start;
+    }
+
+}
+
+@media (max-width: 750px) {
+    .texts h1 {
+        font-size: 2.5em;
+        font-weight: 800;
+        font-size: 30px;
+    }
+
+    .texts p {
+        margin: 2em 0;
+    }
+
+
+    .cardContainer {
+        margin: 3em 0;
+        display: flex;
+        width: 90%;
+        height: 20em;
+        gap: 30px;
+        overflow: auto;
+
+    }
+
+    .pros {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 5em 0;
+        align-items: flex-end;
+        justify-content: flex-start;
+        margin: 0;
+
+    }
+
+    .divide {
+
+        display: none;
+    }
+
+    .prosDetail {
+        display: flex;
+        align-items: flex-start;
+        margin: 0;
+        padding: 0;
+        align-self: flex-start;
+    }
+
+    .explore {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        width: 90%;
+        gap: 3em;
+
+    }
+
+    .explore h2 {
+        margin-top: 1em;
+        font-size: 30px;
+
+        width: 300px;
+    }
+
+    .categories {
+        margin-top: 2em;
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 10px;
+    }
+   
+    .aga2 {
+        margin-top: 3em;
+        width: 90%;
+        align-self: center;
+        text-align: center;
+    }
+
+    .productsContainer {
+        margin-top: 2em;
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 10px;
+    }
+
+    .searchField input {
+        height: 2em;
+        width: 23em;
+        border: none;
+        outline: none;
+        padding: 0;
+    }
+
+    .searchField {
+        display: flex;
+        align-items: center;
+        width: 90%;
+        height: 3em;
+        padding: 1em;
+        border: solid 1px #dddddd;
+        border-radius: 20px;
+    }
+
+    .searchField button {
+        width: 30px;
+        height: 30px;
+        padding-right: .1em;
+        border-radius: 90px;
+        border: none;
+        color: #ffffff;
+        font-size: 15px;
+        background-color: #e05504;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .newProd {
+        width: 11rem;
+        height: 16rem;
+        padding: 0;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: .5s ease;
+    }
+
+
+
+}

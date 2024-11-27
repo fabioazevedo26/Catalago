@@ -1,0 +1,24 @@
+.out {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(2px);
+}
+.in {
+    margin: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: solid 9px #dd5608;
+    border-bottom: solid 9px transparent;
+    animation: spin linear 1s infinite;
+}
+@keyframes spin {
+    from {
+        rotate: 0deg;
+    }
+    to {
+        rotate: 360deg;
+    }
+}
